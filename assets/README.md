@@ -39,12 +39,17 @@ Alla cards, knappar, och inputfält har rundade hörn, och de ska vara rundade t
 ### H1/Logo
 Vår logotyp är baserad på idéen av ett akrobatflyg som har skrivit hemsidans namn med rök. Se *alltid* till att planet är vinklat och positionerat så att bakdelen matchar vinkeln av "svansen" på den sista bokstaven.
 
-## Cookie-popup
+## Cookiebar/ popup
 - Cookie-popupen bör vara synlig på varje enhet (mobil, tablet, desktop).
 - Den ska placeras mitt på sidan och sitta fast där, vilket innebär att den ska vara synlig även när användaren scrollar.
 - Resten av sidan bör vara någorlunda mindre synlig så länge denna popup är kvar (tänk som en overlay med ca 50% opacity).
 - Cookie-popupen ska förbli synlig tills användaren har gjort ett aktivt val, genom att antingen acceptera eller avböja cookies.
 - Denna popup ska *inte* ha rundade hörn.
+- Bakgrundsfärg: #F57E4B
+- Textfärg: #000000
+- "Acceptera" Knapp: #0077B6
+- "Avböj" knapp: #595959
+- Textfärg knappar: #FFFFFF
 
 ## 🎨 Färger
 
@@ -71,8 +76,8 @@ Används till “Acceptera” knappen i cookie bar
 - Text på cookie bar knappar
 
 ### Text - Black - #000000
-Text på alla orangea knappar
-
+- Text på alla orangea knappar
+- Text på Cookie-bar/ cookie-popup
 
 ## 🖊️ Typsnitt
 
