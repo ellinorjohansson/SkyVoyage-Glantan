@@ -30,9 +30,6 @@ För att ladda ner bilderna antingen som PNG eller SVG så gör ni såhär:
 - När knappen är disabled så bör opaciteten vara lägre och den ska inte gå att klicka på.
 - När formuläret är helt ifyllt så blir knappen aktiverad.
 
-### Knappar 
-
-
 ### Rundade hörn
 Alla cards, knappar, och inputfält har rundade hörn, och de ska vara rundade till samma grad. I Figma så har vi rundat dem med corner radius 8.
 
@@ -45,6 +42,7 @@ Vår logotyp är baserad på idéen av ett akrobatflyg som har skrivit hemsidans
 - Resten av sidan bör vara någorlunda mindre synlig så länge denna popup är kvar (tänk som en overlay med ca 50% opacity).
 - Cookie-popupen ska förbli synlig tills användaren har gjort ett aktivt val, genom att antingen acceptera eller avböja cookies.
 - Denna popup ska *inte* ha rundade hörn.
+
 - Bakgrundsfärg: #F57E4B
 - Textfärg: #000000
 - "Acceptera" Knapp: #0077B6
@@ -72,7 +70,7 @@ Används till “Acceptera” knappen i cookie bar
 
 ### Text - White - #FFFFFF
 - H1/ Logo
-- All text utom den på “Läs mer” knapparna
+- All text utom den på “Läs mer” & "boka" knapparna
 - Text på cookie bar knappar
 
 ### Text - Black - #000000
@@ -89,7 +87,7 @@ Används till “Acceptera” knappen i cookie bar
 
 
 # 🖥️ Desktop
-Bredden utgår från 1445 px.
+Bredden utgår från 1440 px.
 
 ### H1 
 Over the Rainbow, 90px
@@ -103,7 +101,7 @@ Jura, 22.5px
 ### Paragraf/ brödtext 
 Inter, 20px
 
-### Knapptext - "Acceptera" & "Avböj" i cookie bar, samt alla "Läs mer" knappar 
+### Knapptext - "Acceptera" & "Avböj" i cookie bar, samt alla "Läs mer" & "boka" knappar 
 Inter, 20px
 
 
@@ -199,7 +197,7 @@ Jura, 25px
 ### Paragraf/ brödtext 
 Inter, 18px
 
-### Knapptext - "Acceptera" & "Avböj" i cookie bar, samt alla "Läs mer" knappar 
+### Knapptext - "Acceptera" & "Avböj" i cookie bar, samt alla "Läs mer" & "boka" knappar 
 Inter, 18px
 
 
@@ -248,7 +246,7 @@ Jura, 20px
 ### Paragraf/ brödtext 
 Inter, 16px
 
-### Knapptext - "Acceptera" & "Avböj" i cookie bar, samt alla "Läs mer" knappar 
+### Knapptext - "Acceptera" & "Avböj" i cookie bar, samt alla "Läs mer" & "boka" knappar 
 Inter, 16px
 
 
@@ -272,8 +270,8 @@ Vår navbar är en ruta som sträcker sig över hela skärmen (100% skärmbredd)
 - Ett streck på botten med en tjocklek på 3px (ljusare ton än resten av knappen)
 
 **Knappar:**
-- White - #FFFFFF 
-- Opacity 15%
+- Knappfärg: White - #FFFFFF 
+- Med Opacity 15%
 - Placering:
   - Jämnt fördelade med 4px mellan varje knapp.
   - Knapparna ska sträcka sig hela vägen till sidorna av skärmen.
