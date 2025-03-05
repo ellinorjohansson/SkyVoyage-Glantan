@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
+import MainHeader from "./component/MainHeader.vue";
+
+
 </script>
 
 <template>
-  <header>
+  <MainHeader />
 
     <div class="wrapper">
 
@@ -12,11 +15,12 @@ import { RouterLink, RouterView } from "vue-router";
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
-  </header>
 
   <RouterView />
 </template>
 
 <style lang="scss">
-
+  body {
+    margin: 0;
+  }
 </style>
