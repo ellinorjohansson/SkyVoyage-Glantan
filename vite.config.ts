@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/fed24d-grafiska-verktyg-mandarinfiskarna/",
   plugins: [
     vue(),
     vueDevTools(),
@@ -13,6 +14,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/style/_variables.scss";`,
+      },
     },
   },
 })
