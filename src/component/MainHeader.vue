@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import HeaderLogo from "./HeaderLogo.vue"
 import SvgLogoPlane from "./SvgLogoPlane.vue"
+import NavBar from "./NavBar.vue"
 </script>
 
 <template>
   <header>
     <HeaderLogo />
+    <NavBar />
     <img src="/assets/images/Hero_image.jpg" alt="" height="1280" width="855" />
     <div>test</div>
   </header>
