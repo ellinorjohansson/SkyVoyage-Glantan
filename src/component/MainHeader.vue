@@ -2,6 +2,7 @@
 import HeaderLogo from "./HeaderLogo.vue"
 import SvgLogoPlane from "./SvgLogoPlane.vue"
 import NavBar from "./NavBar.vue"
+import MainFooter from "./MainFooter.vue";
 </script>
 
 <template>
@@ -11,6 +12,12 @@ import NavBar from "./NavBar.vue"
     <img src="/assets/images/Hero_image.jpg" alt="" height="1280" width="855" />
     <div>test</div>
   </header>
+
+
+
+  <footer>
+    <MainFooter />
+  </footer>
 </template>
 
 <style lang="scss" scoped>
