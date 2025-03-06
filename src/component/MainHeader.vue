@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import HeaderLogo from "./HeaderLogo.vue"
-import SvgLogoPlane from "./SvgLogoPlane.vue"
 import NavBar from "./NavBar.vue"
 </script>
 
@@ -9,22 +8,23 @@ import NavBar from "./NavBar.vue"
     <HeaderLogo />
     <img src="/assets/images/Hero_image.jpg" alt="" height="1280" width="855" />
     <NavBar />
-    <div>test</div>
+    <div class="test">test</div>
   </header>
 </template>
 
 <style lang="scss" scoped>
-//mobile
+// mobile
 header {
   position: relative;
+  width: 100%;
+  height: 145px;
   img {
-    position: relative;
     width: 100%;
-    height: 145px;
+    height: 100%;
     object-fit: cover;
-    object-position: 0% 35%;
+    object-position: 0 35%;
   }
-  div {
+  .test {
     background-color: red;
   }
 }
@@ -38,7 +38,7 @@ header {
       object-fit: cover;
       object-position: 0% 0%;
     }
-    div {
+    .test {
       background-color: aqua;
     }
   }
@@ -53,7 +53,7 @@ header {
       object-fit: cover;
       object-position: 0% 30%;
     }
-    div {
+    .test {
       background-color: brown;
     }
   }
