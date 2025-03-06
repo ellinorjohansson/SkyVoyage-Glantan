@@ -18,7 +18,6 @@ defineProps({
 </template>
 
 <style lang="scss" scoped>
-//mobil
 .product-card {
   background-color: $charcoal;
   margin-top: 20px;
@@ -26,7 +25,7 @@ defineProps({
   flex-direction: column;
   justify-content: space-between;
   width: 95%;
-  min-height: 600px;
+  height: 600px;
   padding-bottom: 15px;
   flex-grow: 1;
 
@@ -42,6 +41,7 @@ defineProps({
   .product-title {
     font-family: $font-body;
     font-size: $mobile-font-size-heading3;
+    margin: 0;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -49,6 +49,7 @@ defineProps({
   .product-paragraph {
     font-family: $font-body;
     font-size: $mobile-font-size-paragraph;
+    margin: 0;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -58,16 +59,16 @@ defineProps({
     margin-right: 5%;
   }
 }
-//tablet
+
 @media screen and (min-width: 768px) {
   .product-card {
-    width: 45%;
-    height: 700px;
+    width: 40%;
+    height: 550px;
     margin: 25px;
     padding-bottom: 20px;
 
     .product-image {
-      height: 300px;
+      height: 250px;
       object-position: center;
       object-fit: cover;
     }
@@ -81,7 +82,28 @@ defineProps({
     }
   }
 }
-//desktop
+
 @media screen and (min-width: 1024px) {
+  .product-card {
+    width: 400px;
+    height: 550px;
+    margin: 40px;
+    flex-grow: 0;
+    padding-bottom: 20px;
+
+    .product-image {
+      height: 250px;
+      object-position: center;
+      object-fit: cover;
+    }
+
+    .product-title {
+      font-size: $desktop-font-size-heading3;
+    }
+
+    .product-paragraph {
+      font-size: $desktop-font-size-paragraph;
+    }
+  }
 }
 </style>

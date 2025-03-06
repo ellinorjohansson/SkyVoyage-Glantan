@@ -33,10 +33,18 @@ import AerobaticPlane from "/assets/images/aerobatic_plane.jpg"
   color: white;
   background-color: $prussian-blue;
 }
+
 @media screen and (min-width: 768px) {
   .product-card-container {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-card-container {
+    height: 550px;
+    padding: 45px;
   }
 }
 </style>
