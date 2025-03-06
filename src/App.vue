@@ -21,5 +21,6 @@ import MainFooter from "./component/MainFooter.vue"
 body {
   margin: 0;
   box-sizing: border-box;
+  background-color: $prussian-blue;
 }
 </style>

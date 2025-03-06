@@ -12,17 +12,40 @@
 <style lang="scss" scoped>
     main {
         background-color: $charcoal;
-        border-radius: 2%;
+        border-radius: 8px;
+        margin: 0 10px;
         h2 {
         font-family: $font-heading2;
         font-size: $mobile-font-size-heading2;
         color: white;
+        padding: 10px;
+        font-weight: 500;
+        margin: 0;
         }
         p {
             font-family: $font-body;
             font-size: $mobile-font-size-paragraph;
             color: white;
-            font-weight: 400;
+            font-weight: 200;
+            padding: 10px;
+            margin: 0;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        h2 {
+            font-size: $tablet-font-size-heading2;
+            p {
+                font-size: $tablet-font-size-paragraph;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        h2 {
+            font-size: $desktop-font-size-heading2;
+            p {
+                font-size: $desktop-font-size-paragraph;
+            }
         }
     }
 </style>
