@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router"
 import MainHeader from "./component/MainHeader.vue"
+import MainFooter from "./component/MainFooter.vue"
 </script>
 
 <template>
@@ -11,8 +12,9 @@ import MainHeader from "./component/MainHeader.vue"
       <RouterLink to="/about">About</RouterLink>
     </nav>
   </div>
-
+ <MainFooter />
   <RouterView />
+  
 </template>
 
 <style lang="scss">
