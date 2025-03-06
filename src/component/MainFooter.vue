@@ -3,7 +3,7 @@
 
 <template>
   <footer class="footer-content">
-    <h2>Skyvoyage</h2>
+    <h2>SkyVoyage</h2>
     <p class="highlight-text">Vi tar dig till nya höjder</p>
     
     <h3>Kontakta oss</h3>
@@ -67,6 +67,7 @@ footer {
     color: white;
     text-decoration: none;
 
+
     &:hover {
       color: $coral; 
     }
@@ -84,6 +85,7 @@ footer {
     align-items: center;
     gap: 15px;
     margin: 20px 20px;
+    padding-bottom: 10px;
   }
 
   a {
@@ -91,7 +93,6 @@ footer {
     font-size: $mobile-font-size-heading4-6;
     font-family: $font-body;
     text-decoration: none;
-    display: flex;
     flex-direction: row;
     align-items: center;
     transition: all 0.3s;
