@@ -58,4 +58,30 @@ defineProps({
     margin-right: 5%;
   }
 }
+//tablet
+@media screen and (min-width: 768px) {
+  .product-card {
+    width: 45%;
+    height: 700px;
+    margin: 25px;
+    padding-bottom: 20px;
+
+    .product-image {
+      height: 300px;
+      object-position: center;
+      object-fit: cover;
+    }
+
+    .product-title {
+      font-size: $tablet-font-size-heading3;
+    }
+
+    .product-paragraph {
+      font-size: $tablet-font-size-paragraph;
+    }
+  }
+}
+//desktop
+@media screen and (min-width: 1024px) {
+}
 </style>
