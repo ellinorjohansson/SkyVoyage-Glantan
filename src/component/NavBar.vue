@@ -1,12 +1,16 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from "vue";
+
+const activeLink = ref("");
+</script>
 
 <template>
   <nav>
     <ul>
-      <li>Hem</li>
-      <li>Luftballong</li>
-      <li>Akrobatflyg</li>
-      <li>Boka</li>
+      <li :class="{ 'active': activeLink === 'hem' }" @click="activeLink = 'hem'">Hem</li>
+      <li :class="{ 'active': activeLink === 'luftballong' }" @click="activeLink = 'luftballong'">Luftballong</li>
+      <li :class="{ 'active': activeLink === 'akrobatflyg' }" @click="activeLink = 'akrobatflyg'">Akrobatflyg</li>
+      <li :class="{ 'active': activeLink === 'boka' }" @click="activeLink = 'boka'">Boka</li>
     </ul>
   </nav>
 </template>
@@ -26,6 +30,12 @@ nav {
     margin: 0;
     align-items: center;
     justify-content: center;
+
+    li {
+      &.active {
+          border-bottom: 2px solid $coral;
+        }
+    }
   }
 }
 
@@ -53,6 +63,13 @@ nav {
       font-size: $desktop-font-size-heading2;
       li {
         margin-right: 40px;
+        cursor: pointer;
+        transition: all 0.3 ease;
+
+        &:hover {
+          text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
       }
     }
   }
