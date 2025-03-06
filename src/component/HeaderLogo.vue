@@ -1,19 +1,30 @@
+<script setup lang="ts">
+  import SvgLogoPlane from "./SvgLogoPlane.vue";
+</script>
+
 <template>
-  <h1>Skyvoyage</h1>
+    <div class="h1-container">
+      <h1>SkyVoyage</h1>
+      <SvgLogoPlane />
+    </div>
 </template>
 
 <style lang="scss" scoped>
-h1 {
+.h1-container {
   position: absolute;
-  z-index: 2;
-  font-family: $font-title;
-  color: white;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+  display: flex;
+  align-items: center;
+  h1 {
   font-size: $mobile-font-size-title;
+  color: white;
+  font-family: $font-title;
   font-style: italic;
   font-weight: 400;
   letter-spacing: 3px;
-  margin-top: 0;
-  left: 25%;
+  }
 }
 
 @media screen and (min-width: 768px) {
