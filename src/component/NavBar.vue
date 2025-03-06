@@ -32,6 +32,14 @@ nav {
     justify-content: center;
 
     li {
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:not(.active):hover {
+          text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+
       &.active {
           border-bottom: 2px solid $coral;
         }
@@ -57,18 +65,15 @@ nav {
 //desktop
 @media screen and (min-width: 1024px) {
   nav {
-    height: 70px;
-    top: 120px;
+    top: 140px;
     ul {
       font-size: $desktop-font-size-heading2;
+      height: 70px;
+      justify-content: flex-end;
+      padding-right: 60px;
       li {
-        margin-right: 40px;
-        cursor: pointer;
-        transition: all 0.3 ease;
-
-        &:hover {
-          text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        }
+        margin-left: 30px;
+        margin-right: 0;
 
       }
     }
