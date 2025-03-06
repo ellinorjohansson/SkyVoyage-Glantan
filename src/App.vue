@@ -12,7 +12,7 @@ import MainFooter from "./component/MainFooter.vue"
       <RouterLink to="/about">About</RouterLink>
     </nav>
   </div>
- <MainFooter />
+  <MainFooter />
   <RouterView />
   
 </template>
