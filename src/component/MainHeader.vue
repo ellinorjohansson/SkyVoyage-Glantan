@@ -7,8 +7,8 @@ import NavBar from "./NavBar.vue"
 <template>
   <header>
     <HeaderLogo />
-    <NavBar />
     <img src="/assets/images/Hero_image.jpg" alt="" height="1280" width="855" />
+    <NavBar />
     <div>test</div>
   </header>
 </template>
@@ -16,6 +16,7 @@ import NavBar from "./NavBar.vue"
 <style lang="scss" scoped>
 //mobile
 header {
+  position: relative;
   img {
     position: relative;
     width: 100%;
