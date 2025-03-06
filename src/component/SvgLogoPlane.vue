@@ -1,11 +1,28 @@
 <script lang="ts" setup></script>
 
 <style lang="scss" scoped>
+// Mobile
+svg {
+  width: 40px;
+  height: 35px;
+  transform: rotate(44.7deg) translateX(-25%) translateY(-15%);
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
   svg {
-    width: 40px;
-    height: 35px;
-    transform: rotate(44.7deg);
+    width: 71px;
+    height: 61px;
   }
+}
+
+// Desktop
+@media screen and (min-width: 1024px) {
+  svg {
+    width: 91px;
+    height: 80px;
+  }
+}
 </style>
 
 <template>

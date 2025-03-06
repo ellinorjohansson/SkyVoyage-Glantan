@@ -28,15 +28,24 @@
 }
 
 @media screen and (min-width: 768px) {
-  h1 {
-    font-size: $tablet-font-size-title;
+  .h1-container {
     left: 2%;
+    top: 45%;
+    transform: translate(0, -49%);
+    h1 {
+    font-size: $tablet-font-size-title;
+    }
   }
 }
 
 @media screen and (min-width: 1024px) {
-  h1 {
+  .h1-container {
+    left: 2%;
+    top: 70%;
+    transform: translate(0, -49%);
+    h1 {
     font-size: $desktop-font-size-title;
+    }
   }
 }
 </style>
