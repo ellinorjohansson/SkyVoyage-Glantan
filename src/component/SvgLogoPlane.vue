@@ -1,4 +1,20 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+  import { onMounted } from "vue";
+  import { gsap } from "gsap";
+
+  onMounted(() => {
+    gsap.to("svg", {
+      duration: 4,
+      x: "+=350",
+      y: "-=500",
+      rotation: 44.7,
+      ease: "power1.inOut",
+      repeatDelay: 3,
+      repeat: -1,
+      delay: 3,
+    });
+  });
+</script>
 
 <style lang="scss" scoped>
 // Mobile
