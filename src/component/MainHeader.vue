@@ -8,7 +8,6 @@ import NavBar from "./NavBar.vue"
     <HeaderLogo />
     <img src="/assets/images/Hero_image.jpg" alt="" height="1280" width="855" />
     <NavBar />
-    <div class="test">test</div>
   </header>
 </template>
 
@@ -24,22 +23,18 @@ header {
     object-fit: cover;
     object-position: 0 35%;
   }
-  .test {
-    background-color: red;
-  }
 }
 
 // tablet
 @media screen and (min-width: 768px) {
   header {
+    width: 100%;
+    height: 445px;
     img {
       width: 100%;
-      height: 445px;
+      height: 100%;
       object-fit: cover;
       object-position: 0% 0%;
-    }
-    .test {
-      background-color: aqua;
     }
   }
 }
@@ -47,14 +42,13 @@ header {
 //desktop
 @media screen and (min-width: 1024px) {
   header {
+    width: 100%;
+    height: 690px;
     img {
       width: 100%;
-      height: 690px;
+      height: 100%;
       object-fit: cover;
       object-position: 0% 30%;
-    }
-    .test {
-      background-color: brown;
     }
   }
 }

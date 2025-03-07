@@ -32,6 +32,7 @@ footer {
   background-color: $charcoal;
   color: white;
   text-align: center;
+  margin-top: 18px;
 
   h2 {
     margin: 0;

@@ -7,10 +7,10 @@ const activeLink = ref("");
 <template>
   <nav>
     <ul>
-      <li :class="{ 'active': activeLink === 'hem' }" @click="activeLink = 'hem'">Hem</li>
+      <RouterLink class="router-link" to="/"><li :class="{ 'active': activeLink === 'hem' }" @click="activeLink = 'hem'">Hem</li></RouterLink>
       <li :class="{ 'active': activeLink === 'luftballong' }" @click="activeLink = 'luftballong'">Luftballong</li>
       <li :class="{ 'active': activeLink === 'akrobatflyg' }" @click="activeLink = 'akrobatflyg'">Akrobatflyg</li>
-      <li :class="{ 'active': activeLink === 'boka' }" @click="activeLink = 'boka'">Boka</li>
+      <RouterLink class="router-link" to="/about"><li :class="{ 'active': activeLink === 'boka' }" @click="activeLink = 'boka'">Boka</li></RouterLink>
     </ul>
   </nav>
 </template>
@@ -30,6 +30,11 @@ nav {
     margin: 0;
     align-items: center;
     justify-content: center;
+
+    .router-link {
+      text-decoration: none;
+      color: white;
+    }
 
     li {
       cursor: pointer;

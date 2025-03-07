@@ -13,7 +13,7 @@
     main {
         background-color: $charcoal;
         border-radius: 8px;
-        margin: 0 10px;
+        margin: 20px 18px;
         h2 {
         font-family: $font-heading2;
         font-size: $mobile-font-size-heading2;
@@ -32,8 +32,11 @@
         }
     }
     @media screen and (min-width: 768px) {
-        h2 {
+        main {
+            margin: 45px 25px;
+            h2 {
             font-size: $tablet-font-size-heading2;
+            }
             p {
                 font-size: $tablet-font-size-paragraph;
             }
@@ -41,10 +44,13 @@
     }
 
     @media screen and (min-width: 1024px) {
-        h2 {
-            font-size: $desktop-font-size-heading2;
+        main {
+            margin: 45px 318px;
+            h2 {
+            font-size: $tablet-font-size-heading2;
+            }
             p {
-                font-size: $desktop-font-size-paragraph;
+                font-size: $tablet-font-size-paragraph;
             }
         }
     }
