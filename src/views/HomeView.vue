@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import ProductCard from "@/component/ProductCard.vue"
-import CardImage from "/assets/images/Card_image.png"
-import AerobaticPlane from "/assets/images/aerobatic_plane.jpg"
+  import ProductCard from "@/component/ProductCard.vue"
+  import AboutUs from "@/component/AboutUs.vue"
+  import CardImage from "/assets/images/Card_image.png"
+  import AerobaticPlane from "/assets/images/aerobatic_plane.jpg"
 </script>
 
 <template>
-  <main>Hem</main>
-  <div class="product-card-container">
+  <main>
+    <AboutUs />
+    <div class="product-card-container">
     <ProductCard
       :image="CardImage"
       title="Upplev himlen från en ny höjd med luftballong!"
@@ -22,7 +24,8 @@ import AerobaticPlane from "/assets/images/aerobatic_plane.jpg"
     En häftig och vågad upplevelse som får ditt hjärta att slå snabbare. 
     Klar för att ta ut svängarna?"
     />
-  </div>
+    </div>
+   </main>
 </template>
 
 <style lang="scss" scoped>

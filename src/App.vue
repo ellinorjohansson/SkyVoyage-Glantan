@@ -12,7 +12,7 @@ import MainFooter from "./component/MainFooter.vue"
       <RouterLink to="/about">About</RouterLink>
     </nav>
   </div>
- <MainFooter />
+  <MainFooter />
   <RouterView />
   
 </template>
@@ -21,5 +21,6 @@ import MainFooter from "./component/MainFooter.vue"
 body {
   margin: 0;
   box-sizing: border-box;
+  background-color: $prussian-blue;
 }
 </style>
