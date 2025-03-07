@@ -17,7 +17,19 @@
         },
     ]);
 
+    // Håller koll på vilken recension som visas
+    const currentReviewIndex = ref(0);
 
+    // Funktioner för att byta recension
+const nextReview = () => {
+  // Öka index för nästa recension
+  currentReviewIndex.value = (currentReviewIndex.value + 1) % reviews.value.length;
+};
+
+const previousReview = () => {
+  // Minska index för föregående recension
+  currentReviewIndex.value = (currentReviewIndex.value - 1 + reviews.value.length) % reviews.value.length;
+};
 
 </script>
 
@@ -25,10 +37,14 @@
 <template>
     <section class="review-section">
         <span class="review-header">Så här tyckte våra passagerare!</span>
+        <div class="review-conatiner">
+            <p class="review-text">{{ reviews[currentReviewIndex].review }}</p>
+            <p class="review-author">- {{ reviews[currentReviewIndex].name }}, {{ reviews[currentReviewIndex].age }} år</p>
+        </div>
         <div class="arrow-container">
-            <i class="fa-solid fa-play fa-rotate-180"></i>
+            <i @click="previousReview" class="fa-solid fa-play fa-rotate-180"></i>
             <span>Bläddra för fler recensioner</span>
-            <i class="fa-solid fa-play"></i>
+            <i @click="nextReview" class="fa-solid fa-play"></i>
         </div>
     </section>
 </template>
@@ -42,10 +58,14 @@
         background-color: $charcoal;
         display: flex;
         color: white;
-
+        font-family: $font-body;
+        
         .review-header {
             font-family: $font-heading2;
             font-size: $mobile-font-size-heading2
+        }
+        .review-text {
+            font-style: italic;
         }
 
         .arrow-container {
