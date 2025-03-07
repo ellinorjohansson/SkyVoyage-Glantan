@@ -1,12 +1,16 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from "vue";
+
+const activeLink = ref("");
+</script>
 
 <template>
   <nav>
     <ul>
-      <li>Hem</li>
-      <li>Luftballong</li>
-      <li>Akrobatflyg</li>
-      <li>Boka</li>
+      <li :class="{ 'active': activeLink === 'hem' }" @click="activeLink = 'hem'">Hem</li>
+      <li :class="{ 'active': activeLink === 'luftballong' }" @click="activeLink = 'luftballong'">Luftballong</li>
+      <li :class="{ 'active': activeLink === 'akrobatflyg' }" @click="activeLink = 'akrobatflyg'">Akrobatflyg</li>
+      <li :class="{ 'active': activeLink === 'boka' }" @click="activeLink = 'boka'">Boka</li>
     </ul>
   </nav>
 </template>
@@ -15,13 +19,64 @@
 nav {
   font-family: $font-heading2;
   z-index: 2;
+  background-color: rgba(255, 255, 255, 0.38);
+  width: 100%;
+  position: absolute;
+  color: white;
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:not(.active):hover {
+          text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+
+      &.active {
+          border-bottom: 2px solid $coral;
+        }
+    }
+  }
 }
 
 //tablet
 @media screen and (min-width: 768px) {
+  nav {
+    top: 120px;
+    ul {
+      height: 50px;
+      font-size: $tablet-font-size-heading2;
+      li {
+        margin-right: 50px;
+
+      }
+    }
+  }
 }
 
 //desktop
 @media screen and (min-width: 1024px) {
+  nav {
+    top: 140px;
+    ul {
+      font-size: $desktop-font-size-heading2;
+      height: 70px;
+      justify-content: flex-end;
+      padding-right: 60px;
+      li {
+        margin-left: 30px;
+        margin-right: 0;
+
+      }
+    }
+  }
 }
 </style>
