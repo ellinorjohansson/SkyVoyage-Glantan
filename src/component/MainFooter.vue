@@ -33,6 +33,7 @@ footer {
   color: white;
   text-align: center;
   margin-top: 18px;
+  padding-bottom: 40px;
 
   h2 {
     margin: 0;
