@@ -36,7 +36,7 @@
     @media screen and (min-width: 768px) {
         main {
             h2 {
-            font-size: $tablet-font-size-heading2;
+                font-size: $tablet-font-size-heading2;
             }
             p {
                 font-size: $tablet-font-size-paragraph;
@@ -46,10 +46,10 @@
     @media screen and (min-width: 1024px) {
         main {
             h2 {
-            font-size: $tablet-font-size-heading2;
+                font-size: $desktop-font-size-heading2;
             }
             p {
-                font-size: $tablet-font-size-paragraph;
+                font-size: $desktop-font-size-paragraph;
             }
         }
     }

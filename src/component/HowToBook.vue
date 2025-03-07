@@ -8,7 +8,7 @@
     </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .text-container {
         background-color: $charcoal;
         border-radius: 8px;
@@ -31,9 +31,9 @@
         }
     }
     @media screen and (min-width: 768px) {
-        main {
+        .text-container {
             h2 {
-            font-size: $tablet-font-size-heading2;
+                font-size: $tablet-font-size-heading2;
             }
             p {
                 font-size: $tablet-font-size-paragraph;
@@ -41,12 +41,12 @@
         }
     }
     @media screen and (min-width: 1024px) {
-        main {
+        .text-container {
             h2 {
-            font-size: $tablet-font-size-heading2;
+                font-size: $desktop-font-size-heading2;
             }
             p {
-                font-size: $tablet-font-size-paragraph;
+                font-size: $desktop-font-size-paragraph;
             }
         }
     }
