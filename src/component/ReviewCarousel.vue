@@ -16,12 +16,20 @@
             age: 27
         },
     ]);
+
+
+
 </script>
 
 
 <template>
     <section class="review-section">
-
+        <span class="review-header">Så här tyckte våra passagerare!</span>
+        <div class="arrow-container">
+            <i class="fa-solid fa-play fa-rotate-180"></i>
+            <span>Bläddra för fler recensioner</span>
+            <i class="fa-solid fa-play"></i>
+        </div>
     </section>
 </template>
 
@@ -33,6 +41,30 @@
         margin-bottom: 60px;
         background-color: $charcoal;
         display: flex;
+        color: white;
+
+        .review-header {
+            font-family: $font-heading2;
+            font-size: $mobile-font-size-heading2
+        }
+
+        .arrow-container {
+            width: 100px;
+            height: 100px;
+            position: relative;
+
+            i {
+                color: white;
+                height: 44px;
+                width: 44px;
+                display: inline-block;
+                font-size: 2rem;
+                z-index: 10000;
+                position: relative;
+
+
+            }
+        }
     }
 
     //tablet
