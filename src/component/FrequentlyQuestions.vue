@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-    <main>
+    <main class="questions-container">
         <h2>Vanliga frågor:</h2>
         <section>
             <h3>Är det säkert att åka luftballong?</h3>
@@ -33,9 +33,63 @@
         </section>
         <section>
             <h3>Finns det ålders- eller hälsokrav för att prova akrobatflyg?</h3>
-            <p>Vi rekommenderar att du är minst 18 år och har en god allmän hälsa. Det kan också finnas särskilda rekommendationer för personer med hjärtproblem eller andra hälsobesvär.</p>
+            <p>- Vi rekommenderar att du är minst 18 år och har en god allmän hälsa. Det kan också finnas särskilda rekommendationer för personer med hjärtproblem eller andra hälsobesvär.</p>
         </section>
     </main>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+    .questions-container {
+        background-color: $charcoal;
+        border-radius: 8px;
+        max-width: 900px;
+        width: 90%;
+        margin: 45px auto;
+        padding-bottom: 10px;
+        h2 {
+            color: white;
+            font-family: $font-heading2;
+            font-size: $mobile-font-size-heading2;
+            font-weight: 500;
+            padding: 10px;
+        }
+        h3 {
+            color: white;
+            font-family: $font-body;
+            font-size: $mobile-font-size-heading3;
+            font-weight: 450;
+            padding-left: 10px;
+        }
+        p {
+            color: white;
+            font-family: $font-body;
+            font-size: $mobile-font-size-paragraph;
+            font-weight: 200;
+            padding-left: 10px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .questions-container {
+            h2 {
+                font-size: $tablet-font-size-heading2;
+            }
+            p {
+                font-size: $tablet-font-size-paragraph;
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .questions-container {
+            h2 {
+                font-size: $desktop-font-size-heading2;
+            }
+            p {
+                font-size: $desktop-font-size-paragraph;
+            }
+        }
+    }
+</style>
