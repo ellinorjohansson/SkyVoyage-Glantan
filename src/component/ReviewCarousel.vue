@@ -132,16 +132,16 @@ const previousReview = () => {
 //desktop
 @media screen and (min-width: 1024px) {
     .review-section {
+        margin-top: 90px;
+        margin-bottom: 60px;
 
         .review-header {
             font-size: $desktop-font-size-heading2;
         }
 
-        .review-container {
-
-            .review-text {
-             
-            }
+        .arrow-container {
+            display: flex;
+            justify-content: space-evenly;
         }
     }
 
