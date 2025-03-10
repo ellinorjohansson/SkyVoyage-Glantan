@@ -6,7 +6,8 @@ import NavBar from "./NavBar.vue"
 <template>
   <header>
     <HeaderLogo />
-    <img src="/assets/images/Hero_image.jpg" alt="" height="1280" width="855" />
+    <img src="/assets/images/Hero_image.jpg" alt="En färgglad luftballong som svävar på en blå himmel" 
+      height="1280" width="855" />
     <NavBar />
   </header>
 </template>
