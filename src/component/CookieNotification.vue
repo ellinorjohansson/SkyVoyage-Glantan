@@ -31,7 +31,7 @@ function declineCookies() {
 </template>
 
 <style lang="scss" scoped>
-.cookie-wrapper{
+.cookie-wrapper {
   position: fixed;
   top: 0;
   width: 100%;
@@ -53,7 +53,7 @@ function declineCookies() {
     align-items: center;
     text-align: left;
 
-    .text-container{
+    .text-container {
       display: flex;
       flex-direction: column;
       align-items: left;
@@ -65,7 +65,7 @@ function declineCookies() {
         padding-left: 30px;
       }
     
-      p{
+      p {
         font-family: $font-body;
         font-size: $mobile-font-size-paragraph;
         padding-left: 30px;
@@ -73,12 +73,12 @@ function declineCookies() {
       }
     }
   
-    .button-container{
+    .button-container {
       display: flex;
       flex-direction: column;
       gap: 15px;
 
-      button{
+      button {
         width: 205px;
         height: 44px;
         box-shadow: 0px 4px 4px 0px #00000040;
@@ -89,21 +89,19 @@ function declineCookies() {
         border: none;
       }
       
-      .accept-btn{
+      .accept-btn {
         background-color: $honolulu-blue;
       }
     
-      .decline-btn{
+      .decline-btn {
         background-color: #595959;
       }
     }
-
   }
 }
 
-// tablet
 @media screen and (min-width: 768px) {
-  .cookie-wrapper{
+  .cookie-wrapper {
     height: auto;
     background: none; 
     backdrop-filter: none; 
@@ -116,20 +114,19 @@ function declineCookies() {
     display: flex;
     flex-direction: row;
 
-    .text-container{
+    .text-container {
       h2 {
         margin-top: 10px;
         font-size: $tablet-font-size-heading2;
       }
     
-      p{
+      p {
         font-size: $tablet-font-size-paragraph;
         margin-bottom: 20px;
       }
-
     }
   
-    .button-container{
+    .button-container {
       margin-right: 30px;
       button{
         width: 160px;
@@ -141,4 +138,19 @@ function declineCookies() {
 }
 }
 
+@media screen and (min-width: 1024px) {
+  .cookie-wrapper {
+    .cookie-container {
+      .text-container {
+        h2 {
+          font-size:  $desktop-font-size-heading2;
+        }
+        
+        p {
+            font-size: $desktop-font-size-paragraph;
+        }
+      }
+    }
+  }
+}
 </style>
