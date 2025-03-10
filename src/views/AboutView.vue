@@ -1,15 +1,16 @@
+<script lang="ts" setup>
+  import HowToBook from "@/component/HowToBook.vue"
+  import FrequentlyQuestions from "@/component/FrequentlyQuestions.vue"
+  import BookingForm from "@/component/BookingForm.vue"
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main>
+    <HowToBook />
+    <BookingForm />
+    <FrequentlyQuestions />
+  </main>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
 </style>

@@ -5,12 +5,13 @@ defineProps({
   image: String, // Bild-URL
   title: String, // Rubrik
   paragraph: String, // Brödtext
+  alt: String // Lägg till alt som en prop
 })
 </script>
 
 <template>
   <div class="product-card">
-    <img :src="image" :alt="title" class="product-image" />
+    <img :src="image" :alt="alt" class="product-image" />
     <h3 class="product-title">{{ title }}</h3>
     <p class="product-paragraph">{{ paragraph }}</p>
     <ReadMoreButton class="product-btn" />

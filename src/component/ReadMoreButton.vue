@@ -2,7 +2,7 @@
   <button>Läs mer</button>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 button {
   font-family: $font-body;
   font-size: $font-size-button;
