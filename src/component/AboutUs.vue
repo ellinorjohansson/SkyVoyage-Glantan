@@ -13,7 +13,9 @@
     main {
         background-color: $charcoal;
         border-radius: 8px;
-        margin: 20px 18px;
+        max-width: 900px;
+        width: 90%;
+        margin: 45px auto;
         h2 {
         font-family: $font-heading2;
         font-size: $mobile-font-size-heading2;
@@ -33,24 +35,21 @@
     }
     @media screen and (min-width: 768px) {
         main {
-            margin: 45px 25px;
             h2 {
-            font-size: $tablet-font-size-heading2;
+                font-size: $tablet-font-size-heading2;
             }
             p {
                 font-size: $tablet-font-size-paragraph;
             }
         }
     }
-
     @media screen and (min-width: 1024px) {
         main {
-            margin: 45px 318px;
             h2 {
-            font-size: $tablet-font-size-heading2;
+                font-size: $desktop-font-size-heading2;
             }
             p {
-                font-size: $tablet-font-size-paragraph;
+                font-size: $desktop-font-size-paragraph;
             }
         }
     }
