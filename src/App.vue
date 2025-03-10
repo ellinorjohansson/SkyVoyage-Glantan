@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router"
-import MainHeader from "./component/MainHeader.vue"
-import MainFooter from "./component/MainFooter.vue"
+
+import { RouterView } from "vue-router";
+import MainHeader from "./component/MainHeader.vue";
+import MainFooter from "./component/MainFooter.vue";
+import CookieNotification from "./component/CookieNotification.vue";
 import NavBarMobile from "./component/NavBarMobile.vue";
+
 </script>
 
 <template>
@@ -10,6 +13,7 @@ import NavBarMobile from "./component/NavBarMobile.vue";
   <RouterView />
   <MainFooter />
   <NavBarMobile />
+  <CookieNotification />
 </template>
 
 <style lang="scss">
