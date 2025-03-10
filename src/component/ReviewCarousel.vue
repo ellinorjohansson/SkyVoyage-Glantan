@@ -38,8 +38,12 @@ const previousReview = () => {
     <section class="review-section">
         <span class="review-header">Så här tyckte våra passagerare!</span>
         <div class="review-container">
-            <p class="review-text">"{{ reviews[currentReviewIndex].review }}"</p>
-            <p class="review-author">- {{ reviews[currentReviewIndex].name }}, {{ reviews[currentReviewIndex].age }} år</p>
+            <transition name="fade" mode="out-in">
+                <div :key="reviews[currentReviewIndex].review" class="review-text-container">
+                    <p class="review-text">"{{ reviews[currentReviewIndex].review }}"</p>
+                    <p class="review-author">- {{ reviews[currentReviewIndex].name }}, {{ reviews[currentReviewIndex].age }} år</p>
+                </div>
+            </transition>
         </div>
         <div class="arrow-container">
             <i @click="previousReview" class="fa-solid fa-play fa-rotate-180"></i>
@@ -101,6 +105,22 @@ const previousReview = () => {
            
         }
     }
+
+//---------För att recensionen ska fadeas ut------------
+
+    .review-container .fade-enter-active, 
+.review-container .fade-leave-active {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.review-container .fade-enter, 
+.review-container .fade-leave-to /* .fade-leave-to är för äldre versioner av Vue */ {
+  opacity: 0; /* Start opacity för fade-out eller fade-in */
+}
+
+.review-container .fade-enter-to {
+  opacity: 1; /* När elementet har börjat in-fade */
+}
 
     //tablet
 @media screen and (min-width: 768px) {
