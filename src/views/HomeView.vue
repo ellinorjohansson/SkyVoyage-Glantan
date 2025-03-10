@@ -3,6 +3,7 @@
   import AboutUs from "@/component/AboutUs.vue"
   import CardImage from "/assets/images/Card_image.png"
   import AerobaticPlane from "/assets/images/aerobatic_plane.jpg"
+  import ReviewCarousel from "@/component/ReviewCarousel.vue"
 </script>
 
 <template>
@@ -27,6 +28,8 @@
       Klar för att ta ut svängarna?"
     />
     </div>
+    <ReviewCarousel />
+
   </main>
 </template>
 

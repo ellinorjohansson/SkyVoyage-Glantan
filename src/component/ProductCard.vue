@@ -29,6 +29,7 @@ defineProps({
   height: 600px;
   padding-bottom: 15px;
   flex-grow: 1;
+  border-radius: 8px;
 
   .product-image {
     width: 100%;
