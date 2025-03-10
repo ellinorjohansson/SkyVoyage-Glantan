@@ -1,20 +1,17 @@
 <script lang="ts" setup>
     import { ref } from "vue";
 
+    interface Review {
+        review: string;
+        name: string;
+         age: number;
+    }
+
     //array med recensionerna
-    const reviews = ref([
-        { review: "Superkul. Var vettskrämd men kul var det!",
-            name: "Margareta",
-            age: 56
-        },
-        { review: "Wow, det här vill jag göra igen! Mycket professionell personal!",
-            name: "Anders",
-            age: 41
-        },
-        { review: "Häftig upplevelse men en gång räcker för mig!",
-            name: "Sara",
-            age: 27
-        },
+    const reviews = ref<Review[]>([
+     { review: "Superkul. Var vettskrämd men kul var det!", name: "Margareta", age: 56 },
+     { review: "Wow, det här vill jag göra igen! Mycket professionell personal!", name: "Anders", age: 41 },
+    { review: "Häftig upplevelse men en gång räcker för mig!", name: "Sara", age: 27 },
     ]);
 
     // Håller koll på vilken recension som visas
