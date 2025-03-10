@@ -56,7 +56,7 @@ import { ref } from "vue";
 
 .nav-item i, .nav-item img {
   color: $coral; 
-  font-size: 34px;
+  font-size: 2.125rem;
   width: 34px; 
   height: 34px;
 }

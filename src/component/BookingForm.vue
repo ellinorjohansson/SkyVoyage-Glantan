@@ -221,7 +221,7 @@ function resetForm() {
             .large-input {
                 width: 300px;  
                 height: 60px;  
-                font-size: 16px;
+                font-size: 1rem;
                 padding: 10px;
                 border-radius: 8px;
             }
