@@ -37,8 +37,8 @@ const previousReview = () => {
 <template>
     <section class="review-section">
         <span class="review-header">Så här tyckte våra passagerare!</span>
-        <div class="review-conatiner">
-            <p class="review-text">{{ reviews[currentReviewIndex].review }}</p>
+        <div class="review-container">
+            <p class="review-text">"{{ reviews[currentReviewIndex].review }}"</p>
             <p class="review-author">- {{ reviews[currentReviewIndex].name }}, {{ reviews[currentReviewIndex].age }} år</p>
         </div>
         <div class="arrow-container">
@@ -52,26 +52,39 @@ const previousReview = () => {
 <style lang="scss" scoped>
     .review-section {
         height: 250px;
-        width: 95%;
-        margin-top: 90px;
-        margin-bottom: 60px;
         background-color: $charcoal;
         display: flex;
         color: white;
         font-family: $font-body;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 8px;
+        margin: 90px 2.5% 60px 2.5%;
         
         .review-header {
             font-family: $font-heading2;
-            font-size: $mobile-font-size-heading2
+            font-size: $mobile-font-size-heading2;
+            margin-top: 15px;
         }
-        .review-text {
-            font-style: italic;
+
+        .review-container {
+            text-align: right;
+
+            .review-text {
+                font-style: italic;
+                font-weight: 200;
+                width: 250px;
+                margin-left: auto;
+            }
         }
 
         .arrow-container {
-            width: 100px;
             height: 100px;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
             i {
                 color: white;
@@ -81,19 +94,56 @@ const previousReview = () => {
                 font-size: 2rem;
                 z-index: 10000;
                 position: relative;
+                line-height: 44px;
 
 
             }
+           
         }
     }
 
     //tablet
 @media screen and (min-width: 768px) {
-    
+    .review-section {
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        .review-header {
+            font-size: $tablet-font-size-heading2;
+        }
+
+        .review-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .review-text {
+                font-size: 1.2rem;
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 //desktop
 @media screen and (min-width: 1024px) {
+    .review-section {
+
+        .review-header {
+            font-size: $desktop-font-size-heading2;
+        }
+
+        .review-container {
+
+            .review-text {
+             
+            }
+        }
+    }
 
 }
 
