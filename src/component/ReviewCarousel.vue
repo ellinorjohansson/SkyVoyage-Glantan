@@ -125,6 +125,11 @@ const previousReview = () => {
                 width: 100%;
             }
         }
+        
+        .arrow-container {
+            justify-content: center;
+            gap: 20px;
+        }
     }
 
 }
@@ -132,16 +137,11 @@ const previousReview = () => {
 //desktop
 @media screen and (min-width: 1024px) {
     .review-section {
-        margin-top: 90px;
+        margin-top: 20px;
         margin-bottom: 60px;
 
         .review-header {
             font-size: $desktop-font-size-heading2;
-        }
-
-        .arrow-container {
-            display: flex;
-            justify-content: space-evenly;
         }
     }
 
