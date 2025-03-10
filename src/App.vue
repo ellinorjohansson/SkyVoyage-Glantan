@@ -15,5 +15,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: $prussian-blue;
+  overflow-x: hidden;
 }
 </style>
