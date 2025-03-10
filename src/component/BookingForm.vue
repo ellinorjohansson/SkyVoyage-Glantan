@@ -56,45 +56,45 @@ function resetForm() {
         </section>
 
         <form @submit.prevent="onSubmit">
-            <label class="firstName">
+            <label class="first-name">
                 <span>Förnamn</span>
                 <input v-model="firstName" type="text">
             </label>
 
-            <label class="lastName">
+            <label class="last-name">
                 <span>Efternamn</span>
                 <input v-model="lastName" type="text">
             </label>
 
-            <label class="emailAdress">
+            <label class="email-adress">
                 <span>Emailadress</span>
                 <input v-model="emailAdress" type="email">
             </label>
 
-            <label class="phoneNumber">
+            <label class="phone-number">
                 <span>Telefonnummer</span>
                 <input v-model="phoneNumber" type="text">
             </label>
 
-            <fieldset class="selectedExperience">
+            <fieldset class="selected-experience">
                 <legend>Typ av flygupplevelse</legend>
 
-                <div class="checkbox-container">
+                <div class="checkbox-container option-one">
                     <input type="checkbox" id="option1" v-model="selectedExperience" value="Luftballong, en person">
                     <label for="option1">Luftballong, en person</label>
                 </div>
 
-                <div class="checkbox-container">
+                <div class="checkbox-container option-two">
                     <input type="checkbox" id="option2" v-model="selectedExperience" value="Luftballong, fler än en person">
                     <label for="option2">Luftballong, fler än en person</label>
                 </div>
 
-                <div class="checkbox-container">
+                <div class="checkbox-container option-three">
                     <input type="checkbox" id="option3" v-model="selectedExperience" value="Akrobatflyg, en person">
                     <label for="option3">Akrobatflyg, en person</label>
                 </div>
 
-                <div class="checkbox-container">
+                <div class="checkbox-container option-four">
                     <input type="checkbox" id="option4" v-model="selectedExperience" value="Akrobatflyg, fler än en person">
                     <label for="option4">Akrobatflyg, fler än en person</label>
                 </div>
@@ -124,8 +124,8 @@ function resetForm() {
             <label class="info-container">
                 <span>Övrig information</span>
                 <p class="info-example">Till exempel; underliggande sjukdomar, höjdrädsla, etc</p>
-                <input v-model="ClientInformation" type="text" class="large-input">
-            </label>
+                <textarea v-model="ClientInformation" class="large-input" rows="6" cols="150"></textarea>            
+                </label>
 
             <div class="button-container">
                 <input class="submit-btn" type="submit" value="Skicka in" :disabled="!isFormValid">
@@ -176,8 +176,8 @@ function resetForm() {
             font-family: $font-heading2;
             font-size: $mobile-font-size-heading2;
             input{
-                width: 250px;
-                height: 30px;
+                width: 300px;
+                height: 40px;
                 border-radius: 8px;
                 background-color: white;
                 border: none;
@@ -219,11 +219,11 @@ function resetForm() {
                 word-wrap: break-word;
             }
             .large-input {
-            width: 300px;  
-            height: 50px;  
-            font-size: 16px;
-            padding: 10px;
-            border-radius: 8px;
+                width: 300px;  
+                height: 60px;  
+                font-size: 16px;
+                padding: 10px;
+                border-radius: 8px;
             }
         }
         
@@ -265,67 +265,116 @@ function resetForm() {
                 }
             }
             
-            form{
+            form {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: auto;
 
-                .firstName{
+                .first-name{
                   grid-column: 1;
                   grid-row: 1;
                 }
 
-                .lastName {
+                .last-name {
                     grid-column: 2;
                     grid-row: 1;
                 }
 
-                .emailadress{
+                .email-adress{
                     grid-column: 1/ span 2;
                     grid-row: 2;
+                    input{
+                        width: 400px;
+                    }
                 }
 
-                .phoneNumber {
+                .phone-number {
                     grid-column: 1 / span 2;
                     grid-row: 3;
+                    input{
+                        width: 400px;
+                    }
                 }
 
-                .selectedExperience{
+                .selected-experience{
                     grid-column: 1 / span 2;
                     grid-row: 4;
                 }
+                    
+                fieldset {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: auto;
 
-                .date{
-                grid-column: 1;
-                grid-row: 5;
-                
+                    legend {
+                        grid-column: 1 / 2;
+                        grid-row: 1;
+                    }
+
+                    input[type="checkbox"] {
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    .option-one {
+                        grid-column: 1;
+                        grid-row: 2;
+                    }
+
+                    .option-two {
+                        grid-column: 2;
+                        grid-row: 2;
+                    }
+
+                    .option-three {
+                        grid-column: 1;
+                        grid-row: 3;
+                    }
+
+                    .option-four {
+                        grid-column: 2;
+                        grid-row: 3;
+                    }
                 }
 
-                .time{
-                    grid-column: 2;
-                    grid-row: 5;
-                }
-
-                .quantity{
+                .date {
                     grid-column: 1;
-                    grid-row: 6;
-              
-                }
-
-                .age{
-                    grid-column: 2;
-                    grid-row: 6;
-                }
-
-                .info-container{
-                    grid-column: 1 / span 2;
                     grid-row: 7;
                 }
 
-                .button-container{
-                    grid-column: 1 / span 2;
+                .time {
+                    grid-column: 2;
+                    grid-row: 7;
+                }
+
+                .quantity {
+                    grid-column: 1;
+                    grid-row: 8;      
+                }
+
+                .age {
+                    grid-column: 2;
                     grid-row: 8;
                 }
+
+                .info-container {
+                    grid-column: 1 / span 2;
+                    grid-row: 9;
+                    .large-input {
+                        width: 400px;
+                        height: 90px;
+                    }
+                }
+
+                .button-container {
+                    grid-column: 1 / span 2;
+                    grid-row: 10;
+                    
+                    .submit-btn, .reset-btn{
+                        width: 195px;
+                    }
+                }
+
             }
         }
     }
@@ -334,7 +383,7 @@ function resetForm() {
         .booking-container {
             section {
                 h2 {
-                font-size: $desktop-font-size-heading2;
+                    font-size: $desktop-font-size-heading2;
                 }
                 .booking-p {
                     font-size: $desktop-font-size-paragraph;
