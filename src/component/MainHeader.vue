@@ -13,7 +13,6 @@ import NavBar from "./NavBar.vue"
 </template>
 
 <style lang="scss" scoped>
-// mobile
 header {
   position: relative;
   width: 100%;
@@ -26,7 +25,6 @@ header {
   }
 }
 
-// tablet
 @media screen and (min-width: 768px) {
   header {
     width: 100%;
@@ -40,7 +38,6 @@ header {
   }
 }
 
-//desktop
 @media screen and (min-width: 1024px) {
   header {
     width: 100%;
