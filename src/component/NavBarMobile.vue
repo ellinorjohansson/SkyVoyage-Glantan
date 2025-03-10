@@ -16,7 +16,7 @@ import { ref } from "vue";
       <img src="/assets/images/airplane_icon_orange.png" alt="Flygplan" class="icon" />
     </div>
 
-    <router-link to="/boka" class="nav-item">
+    <router-link to="/about" class="nav-item">
       <i class="fa-solid fa-calendar-week"></i>
     </router-link>
   </nav>
@@ -56,7 +56,7 @@ import { ref } from "vue";
 
 .nav-item i, .nav-item img {
   color: $coral; 
-  font-size: 34px;
+  font-size: 2.125rem;
   width: 34px; 
   height: 34px;
 }

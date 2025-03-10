@@ -3,6 +3,7 @@
   import AboutUs from "@/component/AboutUs.vue"
   import CardImage from "/assets/images/Card_image.png"
   import AerobaticPlane from "/assets/images/aerobatic_plane.jpg"
+  import ReviewCarousel from "@/component/ReviewCarousel.vue"
 </script>
 
 <template>
@@ -11,6 +12,7 @@
     <div class="product-card-container">
     <ProductCard
       :image="CardImage"
+      alt="En färgglad luftballong som svävar på en blå himmel"
       title="Upplev himlen från en ny höjd med luftballong!"
       paragraph="Boka en oförglömlig luftballongfärd med oss och sväv bort 
       över fantastiska landskap. En rofylld och magisk upplevelse som ger 
@@ -18,6 +20,7 @@
     />
     <ProductCard
       :image="AerobaticPlane"
+      alt="Ett akrobatflygplan i luften som gör en manöver"
       title="Följ med på en adrenalinfylld resa med akrobatflyg!"
       paragraph="Boka din plats för en adrenalinfylld akrobatflygning och 
       känn vinden i ansiktet när du svävar genom loopar och snabba manövrar. 
@@ -25,6 +28,8 @@
       Klar för att ta ut svängarna?"
     />
     </div>
+    <ReviewCarousel />
+
   </main>
 </template>
 
