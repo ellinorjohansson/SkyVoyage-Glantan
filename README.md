@@ -72,11 +72,15 @@ $ pnpm run dev
 
 ### Mobile
 
-![Screenshot mobile screen](länk)
+![Screenshot mobile screen](/assets/screenshots/mobil.png)
+
+### tablet
+
+![Screenshot tablet screen](/assets/screenshots/tablet.png)
 
 ### Desktop
 
-![Screenshot desktop welcome-screen](/link)
+![Screenshot desktop welcome-screen](/assets/screenshots/desktop.png)
 
 ### Wireframes
 
