@@ -39,7 +39,9 @@ This project focuses on implementing a given design and translating it into code
 
 * **Booking Form with v-Model:** Our booking form uses v-model to bind the input fields to their respective values. This ensures that the data entered by users is automatically synchronized with the form fields. On form submission, a function validates the inputs, ensuring that the fields are not empty before proceeding. The form also handles the submit action, and another function is triggered to clear all input fields once the form is submitted.
 
-* **Dynamic and Mobile-Friendly Navigation:** The project includes two navigation bars. The first is a standard navbar for larger screens with active link highlighting and hover effects. The second is a mobile-only bottom navbar, which appears on smaller screens and offers easy access to Home, Luftballong, and Boka using intuitive icons. 
+* **Dynamic and Mobile-Friendly Navigation:** The project includes two navigation bars. The first is a standard navbar for larger screens with active link highlighting and hover effects. The second is a mobile-only bottom navbar, which appears on smaller screens and offers easy access to Home, Luftballong, and Boka using intuitive icons.
+
+* **SVG Animation Created with GSAP:** An animated SVG logo featuring a plane flying away on a continuous loop. The animation is built using GSAP to ensure smooth motion and high performance.
 
 ## 💻 Tech Stack
 
