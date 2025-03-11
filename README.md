@@ -101,17 +101,13 @@ $ pnpm run dev
 
 ### Lighthouse report
 
-![Lighthouse_report](/link)
+![Lighthouse_report](/assets/validation/lighthouse.png)
 
 ### Validation
 
 #### HTML
 
-![Validation HTML](/link)
-
-#### CSS
-
-![Validation CSS](/link)
+![Validation HTML](/assets/validation/HTML_validation.png)
 
 ## 👩‍💻 Authors
 
