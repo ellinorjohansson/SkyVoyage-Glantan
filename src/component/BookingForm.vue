@@ -183,6 +183,8 @@ function resetForm() {
                 border-radius: 8px;
                 background-color: white;
                 border: none;
+                font-size: 1rem;
+                font-family: $font-heading2;
             }
         }
 
