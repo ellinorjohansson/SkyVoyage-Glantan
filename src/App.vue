@@ -20,5 +20,6 @@ body {
   box-sizing: border-box;
   background-color: $prussian-blue;
   overflow-x: hidden;
+  width: 100%;
 }
 </style>
