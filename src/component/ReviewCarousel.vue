@@ -1,14 +1,14 @@
 <script lang="ts" setup>
     import { ref } from "vue";
 
-    interface Review {
+    interface IReview {
         review: string;
         name: string;
          age: number;
     }
 
     //array med recensionerna
-    const reviews = ref<Review[]>([
+    const reviews = ref<IReview[]>([
      { review: "Superkul. Var vettskrämd men kul var det!", name: "Margareta", age: 56 },
      { review: "Wow, det här vill jag göra igen! Mycket professionell personal!", name: "Anders", age: 41 },
     { review: "Häftig upplevelse men en gång räcker för mig!", name: "Sara", age: 27 },
