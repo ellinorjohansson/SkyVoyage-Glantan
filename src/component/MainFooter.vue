@@ -40,7 +40,7 @@ footer {
     font-family: $font-title;
     font-size: $mobile-font-size-title;
     font-style: italic;
-    font-weight: 10;
+    font-weight: 100;
     letter-spacing: 3px;
   }
 

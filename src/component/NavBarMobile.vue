@@ -1,11 +1,10 @@
 <script lang="ts" setup>
-import { ref } from "vue";
 </script>
 
 <template>
   <nav class="bottom-nav">
-    <router-link to="/" class="nav-item">
-      <i class="fa-solid fa-house"></i>
+    <router-link to="/" class="nav-item" aria-label="Gå till startsida">
+      <i class="fa-solid fa-house" alt="Husikon för startsida"></i>
     </router-link>
 
     <div class="nav-item">
@@ -16,8 +15,8 @@ import { ref } from "vue";
       <img src="/assets/images/airplane_icon_orange.png" alt="Flygplan" class="icon" />
     </div>
 
-    <router-link to="/about" class="nav-item">
-      <i class="fa-solid fa-calendar-week"></i>
+    <router-link to="/about" class="nav-item" aria-label="Gå till bokningssida">
+      <i class="fa-solid fa-calendar-week" alt="Kalenderikon för bokning"></i>
     </router-link>
   </nav>
 </template>
