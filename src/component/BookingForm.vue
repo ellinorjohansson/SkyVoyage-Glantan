@@ -8,8 +8,8 @@ const emailAdress = ref("");
 const phoneNumber = ref("");
 const date = ref("");
 const time = ref("");
-const quantity = ref(0);
-const age = ref(0);
+const quantity = ref<string | number>("");
+const age = ref<string | number>("");
 const ClientInformation = ref("");
 
 const selectedExperience = ref([]);
@@ -40,8 +40,8 @@ function resetForm() {
     phoneNumber.value = "";
     date.value = "";
     time.value = "";
-    quantity.value = 0;
-    age.value = 0;
+    quantity.value = "";
+    age.value = "";
     ClientInformation.value = "";
     selectedExperience.value = [];
 }
