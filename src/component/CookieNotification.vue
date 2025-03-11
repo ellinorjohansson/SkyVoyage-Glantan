@@ -56,7 +56,6 @@ function declineCookies() {
     .text-container {
       display: flex;
       flex-direction: column;
-      align-items: left;
 
       h2 {
         font-family: $font-heading2;

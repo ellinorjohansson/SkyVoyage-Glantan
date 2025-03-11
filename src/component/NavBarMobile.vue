@@ -8,11 +8,11 @@
     </router-link>
 
     <div class="nav-item">
-      <img src="/assets/images/balloon_icon_orange.png" alt="Luftballong" class="icon" />
+      <img src="/assets/images/balloon_icon_orange.png" alt="Luftballong" class="icon" width="400" height="567" />
     </div>
 
     <div class="nav-item">
-      <img src="/assets/images/airplane_icon_orange.png" alt="Flygplan" class="icon" />
+      <img src="/assets/images/airplane_icon_orange.png" alt="Flygplan" class="icon" width="646" height="567" />
     </div>
 
     <router-link to="/boka" class="nav-item" aria-label="Gå till bokningssida">
