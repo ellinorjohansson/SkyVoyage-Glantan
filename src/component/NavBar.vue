@@ -6,7 +6,8 @@ const activeLink = ref("");
 
 <template>
   <nav>
-    <ul>
+    <ul> 
+      <!-- Vi har gjort såhär eftersom det bara är Hem och Boka som ska leda till nya sidor, men vi ville ändå att de andra också skulle bli styleade vid click/hover -->
       <RouterLink class="router-link" to="/"><li :class="{ 'active': activeLink === 'hem' }" @click="activeLink = 'hem'">Hem</li></RouterLink>
       <li :class="{ 'active': activeLink === 'luftballong' }" @click="activeLink = 'luftballong'">Luftballong</li>
       <li :class="{ 'active': activeLink === 'akrobatflyg' }" @click="activeLink = 'akrobatflyg'">Akrobatflyg</li>
