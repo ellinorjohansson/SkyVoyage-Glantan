@@ -45,7 +45,6 @@ nav {
           text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
 
-
       &.active {
           border-bottom: 2px solid $coral;
         }
@@ -53,34 +52,34 @@ nav {
   }
 }
 
-//tablet
 @media screen and (min-width: 768px) {
   nav {
     top: 120px;
+
     ul {
       height: 50px;
       font-size: $tablet-font-size-heading2;
+
       li {
         margin-right: 50px;
-
       }
     }
   }
 }
 
-//desktop
 @media screen and (min-width: 1024px) {
   nav {
     top: 140px;
+
     ul {
       font-size: $desktop-font-size-heading2;
       height: 70px;
       justify-content: flex-end;
       padding-right: 60px;
+
       li {
         margin-left: 30px;
         margin-right: 0;
-
       }
     }
   }
@@ -90,5 +89,4 @@ nav {
     display: none; 
   }
 }
-
 </style>

@@ -46,6 +46,7 @@
         width: 90%;
         margin: 45px auto;
         padding-bottom: 10px;
+
         h2 {
             color: white;
             font-family: $font-heading2;
@@ -53,6 +54,7 @@
             font-weight: 500;
             padding: 10px;
         }
+
         h3 {
             color: white;
             font-family: $font-body;
@@ -60,6 +62,7 @@
             font-weight: 450;
             padding-left: 10px;
         }
+
         p {
             color: white;
             font-family: $font-body;
@@ -67,6 +70,7 @@
             font-weight: 200;
             padding-left: 10px;
         }
+
         section {
             margin-bottom: 30px;
         }
@@ -74,19 +78,24 @@
 
     @media screen and (min-width: 768px) {
         .questions-container {
+
             h2 {
                 font-size: $tablet-font-size-heading2;
             }
+
             p {
                 font-size: $tablet-font-size-paragraph;
             }
         }
     }
+    
     @media screen and (min-width: 1024px) {
         .questions-container {
+
             h2 {
                 font-size: $desktop-font-size-heading2;
             }
+
             p {
                 font-size: $desktop-font-size-paragraph;
             }

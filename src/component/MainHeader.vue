@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import HeaderLogo from "./HeaderLogo.vue"
-import NavBar from "./NavBar.vue"
+import HeaderLogo from "./HeaderLogo.vue";
+import NavBar from "./NavBar.vue";
 </script>
 
 <template>
@@ -17,6 +17,7 @@ header {
   position: relative;
   width: 100%;
   height: 145px;
+
   img {
     width: 100%;
     height: 100%;
@@ -29,6 +30,7 @@ header {
   header {
     width: 100%;
     height: 445px;
+
     img {
       width: 100%;
       height: 100%;
@@ -42,6 +44,7 @@ header {
   header {
     width: 100%;
     height: 690px;
+    
     img {
       width: 100%;
       height: 100%;

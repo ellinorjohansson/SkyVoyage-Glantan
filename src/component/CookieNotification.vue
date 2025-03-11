@@ -128,6 +128,7 @@ function declineCookies() {
   
     .button-container {
       margin-right: 30px;
+      
       button{
         width: 160px;
         height: 44px;
@@ -142,6 +143,7 @@ function declineCookies() {
   .cookie-wrapper {
     .cookie-container {
       .text-container {
+
         h2 {
           font-size:  $desktop-font-size-heading2;
         }

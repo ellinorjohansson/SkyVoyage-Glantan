@@ -144,7 +144,6 @@ footer {
     font-size: $tablet-font-size-paragraph;
   }
 
-
   .footer-content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -185,7 +184,6 @@ footer {
   }
 }
 
-/* Desktop Styles */
 @media screen and (min-width: 1024px) {
   footer .heading h2 {
     font-size: $desktop-font-size-heading2;

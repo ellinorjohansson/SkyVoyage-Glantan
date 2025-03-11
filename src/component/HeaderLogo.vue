@@ -17,13 +17,14 @@
   transform: translate(-50%, -49%);
   display: flex;
   align-items: center;
+  
   h1 {
-  font-size: $mobile-font-size-title;
-  color: white;
-  font-family: $font-title;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 3px;
+    font-size: $mobile-font-size-title;
+    color: white;
+    font-family: $font-title;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 3px;
   }
 }
 
@@ -32,8 +33,9 @@
     left: 2%;
     top: 15%;
     transform: translate(0, -49%);
+
     h1 {
-    font-size: $tablet-font-size-title;
+      font-size: $tablet-font-size-title;
     }
   }
 }
@@ -43,8 +45,9 @@
     left: 2%;
     top: 13%;
     transform: translate(0, -49%);
+
     h1 {
-    font-size: $desktop-font-size-title;
+      font-size: $desktop-font-size-title;
     }
   }
 }

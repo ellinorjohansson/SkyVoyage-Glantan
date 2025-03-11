@@ -16,14 +16,16 @@
         max-width: 900px;
         width: 90%;
         margin: 45px auto;
+
         h2 {
-        font-family: $font-heading2;
-        font-size: $mobile-font-size-heading2;
-        color: white;
-        padding: 10px;
-        font-weight: 500;
-        margin: 0;
+            font-family: $font-heading2;
+            font-size: $mobile-font-size-heading2;
+            color: white;
+            padding: 10px;
+            font-weight: 500;
+            margin: 0;
         }
+
         p {
             font-family: $font-body;
             font-size: $mobile-font-size-paragraph;
@@ -35,9 +37,11 @@
     }
     @media screen and (min-width: 768px) {
         main {
+
             h2 {
                 font-size: $tablet-font-size-heading2;
             }
+
             p {
                 font-size: $tablet-font-size-paragraph;
             }
@@ -45,9 +49,11 @@
     }
     @media screen and (min-width: 1024px) {
         main {
+
             h2 {
                 font-size: $desktop-font-size-heading2;
             }
+            
             p {
                 font-size: $desktop-font-size-paragraph;
             }

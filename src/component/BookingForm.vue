@@ -147,6 +147,7 @@ function resetForm() {
         section {
             background-color: $paynes-gray;
             border-radius: 8px;
+
             h2 {
                 font-family: $font-heading2;
                 font-size: $mobile-font-size-heading2;
@@ -175,6 +176,7 @@ function resetForm() {
             color: white;
             font-family: $font-heading2;
             font-size: $mobile-font-size-heading2;
+
             input{
                 width: 300px;
                 height: 40px;
@@ -218,6 +220,7 @@ function resetForm() {
                 max-width: 200px; 
                 word-wrap: break-word;
             }
+
             .large-input {
                 width: 300px;  
                 height: 60px;  
@@ -257,9 +260,11 @@ function resetForm() {
     @media screen and (min-width: 768px) {
         .booking-container {
             section {
+
                 h2 {
                 font-size: $tablet-font-size-heading2;
                 }
+
                 .booking-p {
                     font-size: $tablet-font-size-paragraph;
                 }
@@ -374,7 +379,6 @@ function resetForm() {
                         width: 195px;
                     }
                 }
-
             }
         }
     }
@@ -382,9 +386,11 @@ function resetForm() {
     @media screen and (min-width: 1024px) {
         .booking-container {
             section {
+
                 h2 {
                     font-size: $desktop-font-size-heading2;
                 }
+                
                 .booking-p {
                     font-size: $desktop-font-size-paragraph;
                 }
