@@ -20,6 +20,7 @@
 // Mobile
 svg {
   width: 40px;
+  max-width: 100vw;
   height: 35px;
   transform: rotate(44.7deg) translateX(-25%) translateY(-15%);
 }
