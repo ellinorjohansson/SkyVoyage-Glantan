@@ -85,25 +85,15 @@ $ pnpm run dev
 ### Wireframes
 
 #### Desktop
-![Wireframe desktop home](/assets/screenshots/wireframe-desktop-home.png)
-
-![Wireframe desktop book](/assets/screenshots/wireframe-desktop-book.png)
-
-![Wireframe desktop cookies](/assets/screenshots/wireframe-desktop-cookies.png)
+![Wireframe desktop](/assets/screenshots/wireframe-desktop.png)
 
 #### Tablet
 
-![Wireframe tablet home](/assets/screenshots/wireframe-tablet-home.png)
-
-![Wireframe tablet book](/assets/screenshots/wireframe-tablet-book.png)
+![Wireframe tablet home](/assets/screenshots/wireframe-tablet.png)
 
 #### Mobile
 
-![Wireframe mobile home](/assets/screenshots/wireframe-mobile-home.png)
-
-![Wireframe mobile book](/assets/screenshots/wireframe-mobile-book.png)
-
-![Wireframe mobile cookies](/assets/screenshots/wireframe-mobile-cookies.png)
+![Wireframe mobile home](/assets/screenshots/wireframe-mobile.png)
 
 ## Documentation
 
