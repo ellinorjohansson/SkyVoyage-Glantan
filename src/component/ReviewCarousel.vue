@@ -43,9 +43,13 @@ const previousReview = () => {
             </transition>
         </div>
         <div class="arrow-container">
-            <i @click="previousReview" class="fa-solid fa-play fa-rotate-180"></i>
+            <button  @click="previousReview" aria-label="Föregående recension">
+                <i class="fa-solid fa-play fa-rotate-180"></i>
+            </button>
             <span>Bläddra för fler recensioner</span>
-            <i @click="nextReview" class="fa-solid fa-play"></i>
+            <button @click="nextReview" aria-label="Nästa recension">
+                <i class="fa-solid fa-play"></i>
+            </button>
         </div>
     </section>
 </template>
@@ -86,6 +90,11 @@ const previousReview = () => {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            button {
+                background: none;
+                border: none;
+            }
 
             i {
                 color: white;
