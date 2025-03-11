@@ -40,7 +40,7 @@ This project focuses on implementing a given design and translating it into code
 
 ## Installation
 
-Install fed24d-grafiska-verktyg-mandarinfiskarna locally with npm
+Install fed24d-grafiska-verktyg-mandarinfiskarna locally with pnpm
 
 ```bash
 # Clone this repository
@@ -50,10 +50,10 @@ $ git clone https://github.com/Medieinstitutet/fed24d-grafiska-verktyg-mandarinf
 $ cd fed24d-grafiska-verktyg-mandarinfiskarna
 
 # Install dependencies
-$ npm install
+$ pnpm install
 
 # Run app
-$ npm run dev
+$ pnpm run dev
 ```
 
 ## Screenshots
