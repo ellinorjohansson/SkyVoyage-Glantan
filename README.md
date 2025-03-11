@@ -1,4 +1,4 @@
-# SkyVoyage
+# ✈️ SkyVoyage
 
 This project focuses on implementing a given design and translating it into code using Vue.js. Our task was to accurately follow the design specifications and visual guidelines to create a fully functional and responsive web application.
 
@@ -6,7 +6,7 @@ This project focuses on implementing a given design and translating it into code
 
 [Link to Figma design](https://www.figma.com/design/0uhAuKSgWbY6wmtoa6Ddx9/Dabbagam?node-id=5-50&t=oNVcVJKLufmXLho4-1)
 
-## Table of Contents
+## 📒 Table of Contents
 
 - [What we did](#what-we-did)
 - [Features](#features)
@@ -19,13 +19,13 @@ This project focuses on implementing a given design and translating it into code
   - [Validation](#validation)
 - [Authors](#authors)
 
-## What we did
+## 🗺️ What we did
 - **Design Implementation:** We received a design created in Figma and translated it into code while ensuring pixel-perfect accuracy.
 - **Vue.js Development:** The project was built using Vue.js, leveraging its component-based architecture for maintainability and scalability.
 - **Responsive Design:** We ensured that the application works seamlessly across different screen sizes and devices.
 - **Code Structure & Best Practices:** The project follows clean code principles and best practices to enhance readability, reusability, and maintainability.
 
-## Features
+## 🗝️ Features
 
 * **Cookie Popup & Banner:** Our website uses cookies to improve your experience. When you visit, a popup banner will appear letting you know about it. You can easily hide the popup or banner by clicking the "Accept" or "Decline" buttons.
   
@@ -41,7 +41,7 @@ This project focuses on implementing a given design and translating it into code
 
 * **Dynamic and Mobile-Friendly Navigation:** The project includes two navigation bars. The first is a standard navbar for larger screens with active link highlighting and hover effects. The second is a mobile-only bottom navbar, which appears on smaller screens and offers easy access to Home, Luftballong, and Boka using intuitive icons. 
 
-## Tech Stack
+## 💻 Tech Stack
 
 - ![Vite](https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 - ![Vue.js](https://img.shields.io/badge/Vue.js-%234FC08D.svg?style=for-the-badge&logo=vue.js&logoColor=white)
@@ -50,7 +50,7 @@ This project focuses on implementing a given design and translating it into code
 - ![ESLint](https://img.shields.io/badge/ESLint-%234B32C3.svg?style=for-the-badge&logo=eslint&logoColor=white)
 - ![Prettier](https://img.shields.io/badge/Prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=white)
 
-## Installation
+## 🚀 Installation
 
 Install fed24d-grafiska-verktyg-mandarinfiskarna locally with pnpm
 
@@ -68,7 +68,7 @@ $ pnpm install
 $ pnpm run dev
 ```
 
-## Screenshots
+## 📸 Screenshots
 
 ### Mobile
 
@@ -95,7 +95,7 @@ $ pnpm run dev
 
 ![Wireframe mobile home](/assets/screenshots/wireframe-mobile.png)
 
-## Documentation
+## 📝 Documentation
 
 ### Lighthouse report
 
@@ -111,7 +111,7 @@ $ pnpm run dev
 
 ![Validation CSS](/link)
 
-## Authors
+## 👩‍💻 Authors
 
 - [@karinHson](https://github.com/KarinHson)
 - [@TeaGross](https://github.com/TeaGross)
