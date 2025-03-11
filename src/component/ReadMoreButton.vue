@@ -6,7 +6,7 @@
 button {
   font-family: $font-body;
   font-size: $font-size-button;
-  width: 110px;
+  width: 130px;
   height: 44px;
   border-radius: 8px;
   border: none;
@@ -16,12 +16,6 @@ button {
 
   &:disabled {
     background-color: #939393;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  button {
-    width: 130px;
   }
 }
 

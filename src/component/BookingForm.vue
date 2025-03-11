@@ -235,6 +235,7 @@ function resetForm() {
         .button-container{
             .submit-btn {
                 margin: 0 33px 20px 20px;
+                font-weight: normal;
             }
 
             .reset-btn {
