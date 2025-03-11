@@ -26,8 +26,20 @@ This project focuses on implementing a given design and translating it into code
 - **Code Structure & Best Practices:** The project follows clean code principles and best practices to enhance readability, reusability, and maintainability.
 
 ## Features
-* ex: Shuffle and display the cards randomly each time a new game starts.
-* and so on
+
+* **Cookie Popup & Banner:** Our website uses cookies to improve your experience. When you visit, a popup banner will appear letting you know about it. You can easily hide the popup or banner by clicking the "Accept" or "Decline" buttons.
+  
+* **Product Cards as Props:** To make it easier to create more product cards on the site, we've set them up to be added through props. This allows you to add new products without having to rewrite the same code every time. It's a flexible and efficient way to keep the site scalable and easy to update.
+
+* **Dynamic Review Carousel:** Users can cycle through reviews with smooth fade transitions. We created an IReview interface to structure the reviews, making it easy to add more reviews to the array over time.
+
+* **Easy Review Navigation:** The nextReview and previousReview functions allow users to navigate through reviews, with the carousel looping back to the start when reaching the end.
+
+* **Interactive Navigation Bar for tablet & desktop:** The navbar highlights the active link using Vue's ref, and adds hover effects for a better user experience.
+
+* **Booking Form with v-Model:** Our booking form uses v-model to bind the input fields to their respective values. This ensures that the data entered by users is automatically synchronized with the form fields. On form submission, a function validates the inputs, ensuring that the fields are not empty before proceeding. The form also handles the submit action, and another function is triggered to clear all input fields once the form is submitted.
+
+* **Dynamic and Mobile-Friendly Navigation:** The project includes two navigation bars. The first is a standard navbar for larger screens with active link highlighting and hover effects. The second is a mobile-only bottom navbar, which appears on smaller screens and offers easy access to Home, Luftballong, and Boka using intuitive icons. 
 
 ## Tech Stack
 
