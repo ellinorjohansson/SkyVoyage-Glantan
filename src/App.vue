@@ -7,11 +7,11 @@ import NavBarMobile from "./component/NavBarMobile.vue";
 </script>
 
 <template>
+  <CookieNotification />
   <MainHeader />
   <RouterView />
   <MainFooter />
   <NavBarMobile />
-  <CookieNotification />
 </template>
 
 <style lang="scss">
