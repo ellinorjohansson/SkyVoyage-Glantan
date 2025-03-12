@@ -15,11 +15,14 @@ import NavBarMobile from "./component/NavBarMobile.vue";
 </template>
 
 <style lang="scss">
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
   background-color: $prussian-blue;
   overflow-x: hidden;
-  width: 100%;
 }
 </style>
