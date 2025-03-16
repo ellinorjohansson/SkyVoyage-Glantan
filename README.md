@@ -1,8 +1,9 @@
+> [!NOTE]  
+> This is a school project where we designed a website in Figma and handed it over to another group. At the same time, we received a design from a different group that we had to code and bring to life.
+
 # ✈️ SkyVoyage
 
 This project focuses on implementing a given design and translating it into code using Vue.js. Our task was to accurately follow the design specifications and visual guidelines to create a fully functional and responsive web application.
-
-[Link to live version](https://medieinstitutet.github.io/fed24d-grafiska-verktyg-mandarinfiskarna/)
 
 [Link to Figma design](https://www.figma.com/design/0uhAuKSgWbY6wmtoa6Ddx9/Dabbagam?node-id=5-50&t=oNVcVJKLufmXLho4-1)
 
